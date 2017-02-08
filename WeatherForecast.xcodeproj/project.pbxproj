@@ -15,6 +15,9 @@
 		E0C58CE21E4933FD00825CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C58CE01E4933FD00825CEC /* LaunchScreen.storyboard */; };
 		E0C58CEA1E49597000825CEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C58CE91E49597000825CEC /* Constants.swift */; };
 		E0C58CEC1E495C2000825CEC /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C58CEB1E495C2000825CEC /* CurrentWeather.swift */; };
+		E0C6E9171E4AB5BC00E37504 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6E9161E4AB5BC00E37504 /* WeatherCell.swift */; };
+		E0D263871E4A410C004DA88D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D263861E4A410C004DA88D /* Forecast.swift */; };
+		E0D2638B1E4A4179004DA88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2638A1E4A4179004DA88D /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		E0C58CE31E4933FD00825CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C58CE91E49597000825CEC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E0C58CEB1E495C2000825CEC /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E0C6E9161E4AB5BC00E37504 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		E0D263861E4A410C004DA88D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		E0D2638A1E4A4179004DA88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E1BE29E6758248944B8904A2 /* Pods-WeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
 		F4D572F678303A6A5D6FDAB4 /* Pods-WeatherForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +105,8 @@
 			children = (
 				E0C58CE91E49597000825CEC /* Constants.swift */,
 				E0C58CEB1E495C2000825CEC /* CurrentWeather.swift */,
+				E0D263861E4A410C004DA88D /* Forecast.swift */,
+				E0D2638A1E4A4179004DA88D /* Location.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 		E0C58CEF1E495FFF00825CEC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0C6E9161E4AB5BC00E37504 /* WeatherCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -246,6 +255,9 @@
 				E0C58CD81E4933FD00825CEC /* AppDelegate.swift in Sources */,
 				E0C58CEC1E495C2000825CEC /* CurrentWeather.swift in Sources */,
 				E0C58CEA1E49597000825CEC /* Constants.swift in Sources */,
+				E0D263871E4A410C004DA88D /* Forecast.swift in Sources */,
+				E0D2638B1E4A4179004DA88D /* Location.swift in Sources */,
+				E0C6E9171E4AB5BC00E37504 /* WeatherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4D572F678303A6A5D6FDAB4 /* Pods-WeatherForecast.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
 				INFOPLIST_FILE = WeatherForecast/Info.plist;
@@ -383,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1BE29E6758248944B8904A2 /* Pods-WeatherForecast.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
 				INFOPLIST_FILE = WeatherForecast/Info.plist;
